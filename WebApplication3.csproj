@@ -8,9 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Api\Extensions\" />
-    <Folder Include="Application\Orders\CreateOrder\" />
     <Folder Include="Application\Orders\GetOrder\" />
     <Folder Include="Infrastructure\Repositories\" />
+    <Folder Include="Interface\" />
   </ItemGroup>
 
 </Project>
