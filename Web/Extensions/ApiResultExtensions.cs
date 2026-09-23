@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-using Shop.Application.Common;
+using WebApplication3.Application.Common;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApplication3.Api.Extensions;
