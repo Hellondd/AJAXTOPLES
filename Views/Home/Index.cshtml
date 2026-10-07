@@ -1,0 +1,18 @@
+@model ThreatModelViewModel
+@{
+    ViewData["Title"] = "Главная";
+}
+<h1>Безопасная работа с файлами: модель угроз STRIDE</h1>
+<p>Демонстрационное приложение: границы доверия, угрозы, security backlog и защищённый API загрузки файлов.</p>
+
+<ul class="stats">
+    <li>Границ доверия: <strong>@Model.Boundaries.Count</strong></li>
+    <li>Угроз: <strong>@Model.Threats.Count</strong></li>
+    <li>Задач в backlog: <strong>@Model.Backlog.Count</strong>
+        (закрыто: @Model.Backlog.Count(b => b.Status == BacklogStatus.Done))</li>
+</ul>
+
+<p>
+    <a asp-controller="Threats" asp-action="Index">Открыть модель угроз →</a><br />
+    <a asp-controller="Files" asp-action="Index">Перейти к загрузке файлов →</a>
+</p>

@@ -1,0 +1,14 @@
+@{ ViewData["Title"] = "Файлы"; }
+
+<h1>Загрузка файла</h1>
+
+<input type="text" id="apiKey" placeholder="X-Api-Key" value="demo-secret-key-12345" />
+<input type="file" id="fileInput" />
+<button id="uploadBtn">Загрузить</button>
+<progress id="progress" value="0" max="100"></progress>
+<div id="result"></div>
+
+@section Scripts {
+    <script src="~/js/files-client.js"></script>
+    <script src="~/js/files-page.js"></script>
+}
